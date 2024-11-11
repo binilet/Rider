@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
-import 'package:local_auth/auth_strings.dart';
 import 'package:local_auth/local_auth.dart';
+
 
 class LocalAuthApi {
   static final _auth = LocalAuthentication();
@@ -8,9 +8,10 @@ class LocalAuthApi {
   static Future<bool> hasBiometrics() async {
     try {
       return await _auth.canCheckBiometrics;
+
     } on PlatformException catch (e) {
-      print(e);
-      return false;
+    print(e);
+    return false;
     }
   }
 
@@ -18,18 +19,13 @@ class LocalAuthApi {
     final isAvailable = await hasBiometrics();
     if (!isAvailable) return false;
 
-    try {
+    try{
       return await _auth.authenticate(
-        androidAuthStrings: AndroidAuthMessages(
-          signInTitle: 'Face ID Required',
-        ),
-        localizedReason: 'Scan Face to Authenticate',
-        useErrorDialogs: false,
-        stickyAuth: false,
+        localizedReason: 'scan your fingerprint to authenticate',
       );
-    } on PlatformException catch (e) {
-      print(e);
-      return false;
+    } on PlatformException catch(e){
+          print(e);
+          return false;
     }
   }
 }

@@ -36,14 +36,11 @@ class CustomWindow extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text('${(info.time!.inMinutes) % 60}',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .subtitle1
-                                    ?.copyWith(color: ColorPath.Primarywhite)),
+                              style: Theme.of(context).textTheme.titleMedium?.copyWith(color: ColorPath.Primarywhite),),
                             Text('min',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText2
+                                    .bodySmall
                                     ?.copyWith(color: ColorPath.Primarywhite)),
                           ],
                         ),
@@ -55,7 +52,7 @@ class CustomWindow extends StatelessWidget {
                         '${info.name}',
                         style: Theme.of(context)
                             .textTheme
-                            .bodyText1
+                            .bodyMedium
                             ?.copyWith(color: Colors.black),
                       )),
                     ),

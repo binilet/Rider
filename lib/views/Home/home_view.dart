@@ -42,7 +42,7 @@ class _HomeviewState extends State<Homeview> {
       appBar: PreferredSize(
           preferredSize: Size.fromHeight(70.0),
           child: AppBar(
-            brightness: Brightness.dark,
+            //brightness: Brightness.dark,
             backgroundColor: ColorPath.Primarydark,
             automaticallyImplyLeading: false,
             actions: [
@@ -89,7 +89,10 @@ class _HomeviewState extends State<Homeview> {
                 ),
               ],
             ),
-            systemOverlayStyle: SystemUiOverlayStyle.light,
+            systemOverlayStyle: SystemUiOverlayStyle(
+              statusBarColor: ColorPath.Primarydark,
+              statusBarIconBrightness: Brightness.light
+            ),
           )),
       drawer: RyderDrawer(),
       body: Stack(

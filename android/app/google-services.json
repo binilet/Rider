@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "44231564002",
-    "project_id": "rydr-f7de1",
-    "storage_bucket": "rydr-f7de1.appspot.com"
+    "project_number": "306468223073",
+    "project_id": "ryder-bfbfc",
+    "storage_bucket": "ryder-bfbfc.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:44231564002:android:c41320dec573b5d15f9cbb",
+        "mobilesdk_app_id": "1:306468223073:android:86047f8b6d9565d21fd220",
         "android_client_info": {
-          "package_name": "com.example.rydr"
+          "package_name": "com.rydr.binilet"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "44231564002-1di9e5s20g15q88tgc6rdi5sk3b2fb5p.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCdqrHBFZ1Jc00RAYYuuAEW3a52zvhveD0"
+          "current_key": "AIzaSyACfTmmdO8gNX0H06VnN2v3kESK_oYphkc"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "44231564002-1di9e5s20g15q88tgc6rdi5sk3b2fb5p.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

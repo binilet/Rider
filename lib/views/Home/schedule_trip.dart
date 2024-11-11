@@ -109,7 +109,8 @@ class _ScheduleTripState extends State<ScheduleTrip> {
                     ),
                     textButtonTheme: TextButtonThemeData(
                       style: TextButton.styleFrom(
-                        primary: ColorPath.PrimaryColor,
+                        //primary: ColorPath.PrimaryColor,
+
                       ),
                     ),
                   ),
@@ -165,7 +166,7 @@ class _ScheduleTripState extends State<ScheduleTrip> {
                     ),
                     textButtonTheme: TextButtonThemeData(
                       style: TextButton.styleFrom(
-                        primary: ColorPath.PrimaryColor,
+                        foregroundColor: ColorPath.PrimaryColor,
                       ),
                     ),
                   ),
